@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   ml_questions: any = JSON.parse(JSON.stringify(ml_questions));
   finance_questions: any = JSON.parse(JSON.stringify(finance_questions));
   python_questions: any = JSON.parse(JSON.stringify(python_questions));
-  questions: Array<any> = [this.ml_questions.concat(this.finance_questions.concat(this.python_questions), finance_questions, ml_questions, python_questions, []]
+  questions: Array<any> = [this.ml_questions.concat(this.finance_questions.concat(this.python_questions)), finance_questions, ml_questions, python_questions, []]
   submittedAnswer: string | null;
 
   ngOnInit() {
